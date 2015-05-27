@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sapp Cafe</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<link href="css/title.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/sidemenu.css"> -->
+</head>
+<body>
+<!-- <div class="google-translate ">
+<div id="google_translate_element">&nbsp; -->
+<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 2673px; left: 0px; height: 287px; width: 656px;">
+
+	<img class="parallax-slider" src="mainpage.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -2290.4px; left: 0px; height: 667px; width: 656px; max-width: none;">
+</div>
+<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 2406px; left: 0px; height: 287px; width: 656px;">
+	<img class="parallax-slider" src="secondpage.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -1953.8px; left: 0px; height: 421px; width: 656px; max-width: none;">
+</div>
+<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: hidden; top: 1376px; left: 0px; height: 287px; width: 656px;">
+	<img class="parallax-slider" src="sapp.jpg" style="transform: translate3d(0px, 0px, 0px); position: absolute; top: -1246.8px; left: 0px; height: 656px; width: 656px; max-width: none;">
+</div>
+<div class="parallax-mirror" style="z-index: -100; position: fixed; overflow: hidden; transform: translate3d(0px, 0px, 0px); visibility: visible; top: 203px; left: 0px; height: 287px; width: 656px;">
+	
+</div>
+<section>
+      <div class="container">
+        <h1>Sapp Coffee Shop <small>Thai Town </small></h1>
+        <p>A Little Gem In An Old Thai Town Plaza</p><br>
+
+		
+		</div>
+        <div>
+	         <nav class="navbar">
+	   			<ul class="ul">
+	     			
+	      			<li><a  href="#about" >About Us</a></li>
+	      			<li><a href="contact.html" >Menu</a></li>
+	      			<li> <a href="contact.html" >Press</a></li>
+			</ul>
+	  		</nav>
+		</div>
+
+
+        
+
+</div>
+</section>
+<div class="box-1 parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="sapp.jpg" data-natural-width="1400" data-natural-height="900" style="height: 267px;"></div>
+<section>
+<a name="about" id="about">
+      <div class="container"></a>
+        <h2 id="installation">About us</h2>
+        <small>We are a traditional thai resturant</small>
+
+        <h2 id="useage">Menu</h2>
+
+        <h3 id="viadataattributes">Press</h3>
+
+
+
+        <h3 id="viajavascript">Contact</h3>
+
+        <h3 id="underthehood">filler text</h3>
+
+      </div>
+    </section>
+    <div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="mainpage.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 267px;"></div>
+<section>
+
+      <div class="container">
+         <h2 id="useage">Menu</h2>
+       
+        
+      </div>    
+</section>
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="mainpage.jpg" data-natural-width="1400" data-natural-height="900" style="height: 267px;"></div>
+<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="secondpage.jpg" data-natural-width="750" data-natural-height="763" style="height: 267px;"></div>
+	<footer>
+      <center>	
+      	<div class="container">
+        Check Us Out On Yelp <a href="http://www.yelp.com/biz/sapp-coffee-shop-los-angeles"><b>Sapp Coffee Shop</b></a>
+       
+      	</div>
+      </center>
+      </div>
+    </footer>
+    
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery.steller.min.js"></script>
+<script>
+
+      $(function(){
+        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
+          $('#ios-notice').removeClass('hidden');
+          $('.parallax-container').height( $(window).height() * 0.5 | 0 );
+        } else {
+          $(window).resize(function(){
+            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
+            $('.parallax-container').height(parallaxHeight);
+          }).trigger('resize');
+        }
+      });</script>
+<script >
+	$('a').click(function(){
+		$('html, body').animate({
+			scrollTop: $( $(this).attr('href') ).offset().top
+		}, 2000);
+		return false;
+		
+	});
+</script>
+<!-- <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
+</html>

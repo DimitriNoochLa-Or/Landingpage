@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<head>
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/boostrap-theme.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/second.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top nav-background" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i class="fa fa-play-circle"></i>  <span class="light">Welcome</span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" id="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </nav>
+
+    <div class="container2">
+      <h1 class="animated bounce site__title mega">Dimitri Nooch La-Or </h1>
+      <br> <h3 class="animated  infinite pulse smallh3"><center>Welcome to my page</center></h3>
+    </div>
+    <a name="about" id="about">
+    <div id="#about" class="about col-md-4"></a>
+        <h2>About Me</h2>
+    
+    </div>
+
+</body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/second.js"></script>
+<script type="text/javascript"> $('a').click(function(){
+    $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top
+    }, 2000);
+    return false;
+    
+  });
+});</script>
+</html>
