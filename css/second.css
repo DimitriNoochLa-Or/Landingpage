@@ -1,8 +1,8 @@
 html,body {
   /* Extra Styles */
  
-  color: #425363;
-  font-family: avenir, 'segoe ui', sans-serif;
+  color: #000000;
+  font-family: avenir, 'Helvetica', sans-serif;
 }
 
 @-webkit-keyframes move {
@@ -29,6 +29,7 @@ html,body {
   border-right: 0;
   border-left: 0;
   margin:0 auto;
+  color: #000000;
 }
 
 
@@ -60,6 +61,7 @@ a {
   line-height: 1;
 }
 h1{
+ color: #000000;
 margin-bottom: 1.5rem;
   font-size: 3rem;
   font-weight: 100;
@@ -70,15 +72,75 @@ margin-bottom: 1.5rem;
     font-weight: 400;
 }
 .about{
-  background-color: #3D3849;
+  background-image: url("../swordfish.jpg");
+   -webkit-background-size: cover; 
+  color: #000000;
   height: 300px;
-  width:500px;
+  width:33%;
+  display: inline-block;
 } 
 .nav-background{
   background-image: url("../Robo.jpg");
   opacity: .8;
+  color: #000000;
+  -webkit-background-size:cover;
+}
+.nav-font{
+    font-family: avenir, 'Helvetica', sans-serif;
+
 }
 .smallh3{
-    color: #f35626;
+    color: #000000;
 
+}
+.contact{
+   background-image: url("../whale.jpg");
+   -webkit-background-size: cover; 
+  color: #000000;
+  height: 300px;
+  width:34%;
+  display: inline-block;
+}
+.projects{
+   background-image: url("../catfish.jpg");
+   -webkit-background-size: cover; 
+  color: #000000;
+  height: 300px;
+  width:33%;
+  display: inline-block;
+}
+.wrapper{
+  width: 100%;
+  display: inline-block;
+  height: 300px;
+}
+.aboutwords{
+  background-image: url("../blackback.jpg");
+  width: 31%;
+  height:10%;
+  white-space: nowrap;
+  color: white;
+  font-family: avenir, 'Helvetica', sans-serif;
+}
+.aboutwords:hover{
+  background-image: url("../blackback");
+  height: 269px;
+  width: 410px;
+  opacity: .8;
+}
+.contactwords{
+  background-image: url("../blackback.jpg");
+  width: 25%;
+  height:10%;
+  white-space: nowrap;
+  color: white;
+  font-family: avenir, 'Helvetica', sans-serif;
+}
+.projectwords{
+  background-image: url("../blackback.jpg");
+  width: 26%;
+  height:10%;
+  white-space: nowrap;
+  color: white;
+  font-family: avenir, 'Helvetica', sans-serif;
 }
