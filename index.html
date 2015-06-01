@@ -11,7 +11,11 @@
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css.map">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
+  <link rel="stylesheet" type="text/css" href="css/img.css">
 	<link rel="stylesheet" type="text/css" href="css/second.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
@@ -24,7 +28,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Welcome</span>
+                    <i class=""></i>  <span class="light">Welcome</span>
                 </a>
             </div>
 
@@ -56,17 +60,215 @@
         <div id="#about" class="about col-md-4">
             <h2 class="aboutwords">About Me</h2>
             <div class="aboutbox">
+            
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+             
+
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active pic">
+                <img class="pic" src="pictures/html.jpg" alt="...">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div>
+              <div class="item pic">
+                <img class="pic" src="pictures/php.jpg" alt="...">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div> 
+              <div class="item pic">
+                <img class="pic" src="pictures/jquery.jpg" alt="...">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div> 
+              <div class="item pic">
+                <img class="pic" src="pictures/js.png" alt="...">
+                <div class="carousel-caption">
+                  ...
+                </div>
+              </div>
+              ...
             </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
 
         </div>
         <a name="Project" id="Project">
         <div id="#Project" class="projects col-md-4"></a>
             <h2 class="projectwords">Projects</h2>
-       </div>
+            <div class="row">
+              <div class="row" id="caption-style-1">
+                <div class="col-md-4">
+                  <ul class="caption-style-1">
+                    <li>
+                      <a href="http://localhost/Awesomenauts/index.php"><img src="pictures/awesomenauts.png" alt=""></a>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                          <h1>AwesomeNauts</h1>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-4">
+                  <ul class="caption-style-1">
+                    <li>
+                      <a href="http://localhost/Audiopunkpictures/index.php"><img src="pictures/instagram.png" alt=""></a>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                          <h1>Created Instagram</h1>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div><div class="col-md-4">
+                  <ul class="caption-style-1">
+                    <li>
+                      <a href="http://localhost/To-Do-List2.0/todo.php"> <img src="pictures/todo.png" alt=""></a>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                          <h1>To-DoList</h1>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div> <div class="col-md-4">
+                  <ul class="caption-style-1">
+                    <li>
+                      <a href="http://localhost/portfolio-master/index.php"><img src="pictures/portfolio.png" alt=""></a>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                          <h1>Portfolio</h1>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div><div class="col-md-4">
+                  <ul class="caption-style-1">
+                    <li>
+                      <a href="http://localhost/beantown-master/Beantown.php"><img src="pictures/beantown.png" alt=""></a>
+                      <div class="caption">
+                        <div class="blur"></div>
+                        <div class="caption-text">
+                          <h1>Beantown</h1>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div> 
+            </div>
+            </div>
         <a name="Contact" id="Contact">
         <div id="#Contact" class="contact col-md-4 "></a>
           <div>
-              <section id="hire">
+          <?php
+  if ($_POST["submit"]) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
+    $human = intval($_POST['human']);
+    $from = ' Contact Form'; 
+    $to = 'dimitrinoochlaor@gmail.com'; 
+    $subject = 'Message from Contact  ';
+    
+    $body ="From: $name E-Mail: $email Message: $message";
+    // Check if name has been entered
+    if (!$_POST['name']) {
+      $errName = 'Please enter your name';
+    }
+    
+    // Check if email has been entered and is valid
+    if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      $errEmail = 'Please enter a valid email address';
+    }
+    
+    //Check if message has been entered
+    if (!$_POST['message']) {
+      $errMessage = 'Please enter your message';
+    }
+    //Check if simple anti-bot test is correct
+    if ($human !== 5) {
+      $errHuman = 'Your anti-spam is incorrect';
+    }
+// If there are no errors, send the email
+if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
+  if (mail ($to, $subject, $body, $from)) {
+    $result='<div class="alert alert-success">Thank You! I will be in touch</div>';
+  } else {
+    $result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later.</div>';
+  }
+}
+  }
+?>
+          <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1 class="page-header text-center">Contact Me</h1>
+        <form class="form-horizontal" role="form" method="post" action="index.php">
+          <div class="form-group">
+            <label for="name" class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+              <?php echo "<p class='text-danger'>$errName</p>";?>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+              <?php echo "<p class='text-danger'>$errEmail</p>";?>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message" class="col-sm-2 control-label">Message</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" rows="4" name="message"><?php echo htmlspecialchars($_POST['message']);?></textarea>
+              <?php echo "<p class='text-danger'>$errMessage</p>";?>
+            </div>
+          </div>
+        
+          </div>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-10 col-sm-offset-2">
+              <?php echo $result; ?>  
+            </div>
+          </div>
+        </form> 
+      </div>
+    </div>
+  </div>   
+             <!--  <section id="hire">
                     <h1>Contact Me</h1>
                     
                     <form>
@@ -90,11 +292,12 @@
 
                         <input class="button" type="submit" value="Send" />
                   </form>
-              </section>
+              </section> -->
           </div>
         </div>
-    <!-- </div>  -->
-
+      <footer>
+          
+      </footer>
 </body>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
